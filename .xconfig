@@ -5,6 +5,8 @@ for x in $HOME/.xresources-*; do xrdb -merge "$x"; done
 setxkbmap -option
 setxkbmap -option terminate:ctrl_alt_bksp
 setxkbmap -option caps:escape
+xmodmap -e 'keycode 30 = u U y Y y Y'
+xmodmap -e 'keycode 108 = Mode_switch'
 
 tpDev='SynPS/2 Synaptics TouchPad'
 xinput set-prop "$tpDev" "Synaptics Tap Time" 0
