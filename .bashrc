@@ -102,6 +102,7 @@ alias perms='stat -c %a'
 alias glxgears='vblank_mode=0 glxgears'
 function mnto { sudo mnt --other --no-usb --no-card ; }
 alias gparted='spawnexsudo gparted'
+alias gg='TZ=UTC git gui'
 function s           { $@ & disown ; }
 function spawn       { $@ & disown ; }
 function spawnex     { $@ & disown && exit 0 ; }
